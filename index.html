@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Presentation Template</title>
+		<title>Rapid Technologies</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -38,6 +38,43 @@
 				border-top: 1px solid #bbb !important;
 				padding-top: 10px !important;
 			}
+			.supertext{
+				color: #ccc;
+				font-size: .8em !important;
+				font-style: italic !important;
+				position: absolute !important;
+				top: -100px !important;
+				border-bottom: 1px solid #ccc !important;
+				padding-bottom: 10px !important;				
+			}
+			.question{
+				color: #444;
+				font-size: .8em !important;
+				font-style: italic !important;
+				padding-bottom: 40px !important;
+			}
+			.imageblock{
+				float:left;
+				margin-left:20px;
+				height:150px;
+			}
+			img {
+				border:6px solid #eee !important;
+				margin: 4px !important;
+			}
+			.tweet{
+				height:80px;
+				margin-top:40px !important;
+			}
+			.bulletpoint{
+				font-weight: bold;
+				margin-top: 40px !important;
+				margin-bottom: 40px !important;
+				color:#666;
+			}
+			p{
+				margin:20px;
+			}
 		</style>
 		
 		
@@ -50,377 +87,582 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
+            <section>
 				<section>
-					<h1>Title</h1>
-					<h3>SubTitle</h3>
+					<h1>How To:</h1>
+					<h2>Survive & Thrive</h2>
+					<h3>Rapid Advancing Technologies</h3>
+					<br/>
+					<br/>
 					<p>
-						<small>Created by <a href="http://adaptivepatterns.net">Clint Nash</a> / <a href="http://twitter.com/adaptivepattern">@adaptivepattern</a></small>
+						<small>by <a href="http://adaptivepatterns.net">Clint Nash</a> / <a href="http://twitter.com/adaptivepattern">@adaptivepattern</a></small>
 					</p>
 				</section>
-
 				<section>
-					<h2>Heads Up</h2>
+					<h2>A little bit about me.</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					   JavaScript Architect</br>GIS for GE and TimeWarner Cable. </br>Web Video Systems for TechStars, Dish, NFL, NBC Sports. <br/>And some other stuff with Arduino and Music.
+					</p><br/>
+					<p class="bulletpoint"> I love learning anything I can about the Web and everything possible about JavaScript.
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
-				
 				<section>
-					<section>
-						<h2>My Examples</h2>
-						<ul>
-							<li>Fragments</li>
-							<li>Sub-Items</li>
-							<li>Code</li>
-							<li>Quotes</li>
-							<li>Big Image </li>
-						</ul>						
-					</section>
-					<section>
-						<h2>Fragment Example</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>					
-					</section>
-					
-					<section>
-						<h2>Sub-Text Example</h2>
-						<p>Some text or image that I really want to highlight with a link or snarky joke at the bottom of the page</p>
-						<div class="subtext fragment">some comment - or link.</div>
-					</section>
-					
-					<section>
-						<h2>Code Example</h2>
-							<pre><code contenteditable>
-	function linkify( selector ) {
-	  if( supports3DTransforms ) {
-
-		var nodes = document.querySelectorAll( selector );
-
-		for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-		  var node = nodes[i];
-
-		  if( !node.className ) ) {
-			node.className += ' roll';
-		  }
-		};
-	  }
-	}
-							</code></pre>
-							<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>						
-					</section>					
-					
-					<section>
-						<h2>Quote Example</h2>
-						<p>
-							These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-							The nice thing about standards is that there are so many to choose from</q> and block:
-						</p>
-						<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-							For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-							reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-						</blockquote>
-						
-					</section>
-					
-					<section>
-						<h2>Big Image Example</h2>
-						<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-							<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-						</a>						
-					</section>
-				</section>
-					
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					<h2>How about you?</h2>
+					<p class="bulletpoint">
+						I'd like to know who you are?<br/>
+						What you want to know more about?<br/>
+						And what do you know?<br/>
 					</p>
 				</section>
+			</section>
 
+			<section>
 				<section>
-					<h2>rvl.io</h2>
-					<p>
-						If you don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
+					<div class="supertext">Problem Statement - Metaphore</div>
+					<p class="bulletpoint">
+						<h3>How many of you ride a bike?</h3>
+					</p>
+					<p class="bulletpoint fragment">
+						What kind of bike?
+					</p>
+					<p class="question fragment">
+						It is second-nature?
 					</p>
 				</section>
-
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
+					<div class="supertext">Problem Statement - Metaphore</div>
+					<h2>Well, it hasn't always been that way...</h2>
+					<p class="fragment">					
+						<img width="320" src="./img/pennyfarthingbike.jpg">
+					</p>
+					<p class="subtext fragment">
+						This 1809 pennyfarthing bike does not exactly excel in functional design. But then again, many emerging innovations share in this problem. Where we tend to overcome complexity... one step at a time.
 					</p>
 				</section>
-
 				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<div class="supertext">Problem Statement - Metaphore</div>
+					<h3>In the 1890's, an improvement started a "bicycle craze"</h3>
+					<p>					
+						<img width="320" src="./img/bikecraze.jpg">
+					</p>
+					<p class="fragment subtext">
+						Where the innovation was to add a gear, sprocket and chain - to the center of the frame for improved stability and safety.
+					</p>
 				</section>
-
 				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h3> We iterated upon this design for many decades...</h3>
+					<p>
+						<img width="320" src="./img/manybikes.jpg">
+					</p>
+					<p class="fragment subtext">
+						Notably, from the turn of the century - through the 1970's...
+					</p>
+				</section>
+				<section>
+					<h3>Resulting in a vast and diverse</h3>
+					<h3> spectrum of "bikes".</h3>
+					
+						<img class="imageblock" src="./img/dirtbike.jpg">
+						<img class="imageblock" src="./img/wheeliebike.jpg">
+						<img class="imageblock" src="./img/chopperbike.jpg">
+						<img class="imageblock" src="./img/mountainbike.jpg">
+					<p class="fragment subtext">
+						The "Wheelie Bike" is my favorite.
+					</p>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<div class="supertext">Problem Statement - Facts</div>
+					<h3>Web Technology is like this too.</h3>
+				    <ul>
+				    	<li class="fragment"  style="font-size:.8em;">
+				    		With over 166 million active websites in 2013...
+				    	</li>
+				    	<li class="fragment"   style="font-size:.8em;">
+				    	    Mobile usage numbers eclipsing that of the traditional desktop...
+				    	</li>
+				    	<li class="fragment"  style="font-size:.8em;">
+				    		And an underlying Web Technology splintered into a vast and diverse spectrum.
+				    	</li>
+				    </ul>
+				</section>
+				<section>
+					<h3>This presents a challenge for</h3>
+					<h3> today's Web Developers</h3>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li  class="fragment">Navigate the existing (vast and diverse) <br/>Web Technology Spectrum.<br/></li>
+						<li  class="fragment" style="padding-top:20px">While keeping up with Solutions and Best-Practices - that emerge and change randomly.</li>
+					</ol>
+					<div class="subtext fragment">This is a tall order.</div>
+				</section>
+				<section>
+					<h3>And it is accelerating...</h3>
+					<p class="fragment bulletpoint">
+						~ Increasingly, if we are not learning each and every workday - we are at risk of falling behind.
+					</p>
+					<div class="subtext fragment">That is how fast advancement seems to be moving. And in that respect, at the end of ten weeks you will be ahead of the many people that have not learned the best-practices that you will learn here.</div>
+				</section>
+				<section>
+					<h2>So, this is why we are here today.</h2>
+					<p>
+						And why we must know...
+					</p>
+				</section>
+			</section>
+
+            <section>
+				<section>
+					<h1>How To:</h1>
+					<h2>Survive & Thrive</h2>
+					<h3>Rapid Advancing Technologies</h3>
+				</section>
+				<section>
+					<h2>Overview of Discussion</h2>
+					<h4>I. Getting Started</h4>
+					<h4>II. How To Survive</h4>
+					<h4>III. How To Thrive</h4>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h3>First off, You've made a great choice...</h3>
+					<div class="fragment">
+						<img height="300px" src="img/refactoru.jpg">
+					</div>
+
+				</section>
+				<section>
+					<div class="supertext">I Getting Started</div>
+					<p>
+						Being a Web Developer is a fun job and it is tremendously rewarding.
+					</p>
+					 <div class="bulletpoint fragment">
+					 	~ Take that first step, for each technology, and keep going.
+					 </div>	
+				</section>
+
+				<section>
+					<p class="question">
+						<h3>How many of you are on social media?</h3>
+					</p>
+					<p style="margin-left:100px;">
+						<img class="imageblock" src="./img/twitter.jpg">
+						<img class="imageblock" src="./img/reddit.jpg">
+						<img class="imageblock" src="./img/stackoverflow.jpg">
+						<img class="imageblock" src="./img/octocat.jpg">
+					</p>
+					<br/><br/>
+					<div style="float:left; margin-left:340px; margin-top:30px;">
+					<p class="question fragment">
+						Which do you use?
+					</p></div>
+				</section>
+				<section>
+					<h2>What do you think about this...</h2>
+					<p>
+						<img class="tweet" src="./img/tweets/k.png">
+					</p>
+				</section>
+				<section>
+					<h2>Might this be true?</h2>
+					<p class="fragment">
+						<img src="./img/html5.png"><br/>
+						Good answers get a sticker.
+					</p>
+				</section>
+				<section>
+					<p>
+						<img class="tweet" src="./img/tweets/j.png">
+					</p>
+					<p class="fragment bulletpoint">
+						~ The educational value of Twitter is profound because, never before, have we been able to listen in to the thoughts of our top minds in real time.
+					</p>
+					 <div class="bulletpoint fragment">
+					 	~ We live in Amazing Times.
+					 </div>	
+				</section>
+				<section>
+					<p>
+						This is due in large part to the Web,<br/> to those who build it,<br/> and by extension to everybody in this room.
+					</p>
+					<br/>
+					<p>
+						<img class="tweet fragment" src="./img/tweets/i.png">
+					</p>
+				</section>
+				<section>
+					 <div class="bulletpoint">
+					 	~ Leverage the Web.
+					 </div>	
+					 <p>
+					 	~ Everything that you need to know is on the Web - our job as Web Developers - is to decipher it.
+					 </p>	
+					 <p>
+					 	<img class="tweet fragment" src="./img/tweets/o.png">
+					 </p>
+				</section>
+				<section>
+					<h3>So many technologies to learn...</h3>
+					<p>
+						You might be overwhelmed - but take heart.
+					</p>
+					 <p class="fragment question" style="padding-top:20px">
+					 	Many of the biggest problems are solved!
+					 </p>
+					 <p class="fragment question">
+					 	What we are generally called to do, is to reuse and improve on existing solutions.
+					 </p>
+					<div class="subtext fragment">I.e - the solutions are already there. We just have to know where to find them.</div>
+				</section>
+				<section>
+					<h3>For emerging technologies...</h3>
+					<div class="bulletpoint fragment">
+					 	~ Make learning a daily-diet.
+					 </div>	
+					<p class="bulletpoint fragment">
+						A light but continuous habit of knowledge ingestion.
+					</p>
+				</section>
+				<section>
+
+					 <p class="fragment bulletpoint">
+					 	~ Synch with the social-web and drink from the firehose.
+					 </p>
+					<div class="subtext fragment"> 
+					  Like Dory says in finding Nemo, "Just keep swimming."
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section> 
+					<h1>II.</h1>
+					<h2>How To Survive</h2>
+				</section>
+				<section>
+					<div class="supertext">II. How To Survive</div>
+					<p class="question">
+						<h4>How many of you enjoy some of these sports:</h4> ski, snowboard, mountain bike, rock-climb, scuba-dive, snorkel, or surf?
+					</p>
+					<p class="question fragment">
+						<img src="./img/html5.png"><br/>
+						For a sticker... what do all of these have in common?
+					</p>
+					<p class="fragment subtext" style="padding-top:10px">
+					    Initially, they can be scary, even painful, but once you gain proficiency you can become empowered.
+					</p>
+				</section>
+				<section>
+					<div class="supertext">II. How To Survive</div>
+					<h3>Web Development can be like this too.</h3>
+					<div class="fragment">
+					<p>
+						If Rapid Advancing Technologies is like a rising tide - then what you need to do is learn to surf.
+					</p>
+					<img class="fragment" height = "180px" src="./img/surfing.jpg">
+				</div>
+				</section>
+				<section>
+					<h3>
+					 	~ Learn to Surf.
+					 </h3>	
+					<ol>
+						<li>Be Buoyant</li>
+						<li>Adapt</li>
+						<li>Ride The Wave</li>
 					</ol>
 				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-							<section data-markdown>
-							  ## Markdown support
-
-							  For those of you who like that sort of thing.
-							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-							</section>
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
 				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
-					</section>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					<h3>
+					 	~ Buoyancy means...
+					 </h3>	
+					<p class="fragment bulletpoint">
+						~ Avoid becoming overly attached to any one idea. There is a good chance it will deprecate in time.
 					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+					 <p>
+					 	<img class="tweet fragment" src="./img/tweets/f.png">
+					 </p>
+                    <div class="subtext fragment bulletpoint"> 
+					   To constantly injest knowledge - learn to float on top.
+					</div>
 				</section>
-
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
+					<h3>
+					 	~ Get Curious.
+					 </h3>
+					 <div class="bulletpoint fragment"> – Dive into new technologies, fearlessly.</br>
+					 	<img class="fragment" src="./img/diving.jpg">
+					 </div>	
+					<p class= "fragment bulletpoint">
+						~ Buzzword Bingo. – Write down every technical buzzword that you do not understand, and Google or Wiki it later.
 					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
+
+                    <div class="subtext fragment bulletpoint"> 
+					   Write it down, look it up later - that is your doorway to knowledge.
+					</div>
+
+
 				</section>
-
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<h3>
+						~ Adapt
+					</h3>
+					<p class="fragment bulletpoint">
+						~ Just like learning to swim - The Web is becoming easier to learn. Anyone can do it, and there is much you can do with this skill.
+					</p>
+					<p class="fragment bulletpoint">
+						~ Standard Workflow.<br/>a) Download Example b) Double-Click HTML c) Right-Click Inspect Code. 
+					</p>
+					<p class="fragment bulletpoint">
+						- That is all that is required to start developing the web!
+					</p>
+                    <div class="subtext fragment"> 
+					   Web Development can be immediate and malleable.
+					</div>
 				</section>
-
 				<section>
-					<h2>Intergalactic Interconnections</h2>
+					<h3>
+						~ Leverage that Immediacy!
+					</h3>
+					<p class= "fragment bulletpoint">
+					 – Download a working example, understand why it works, then make one-off modifications.
+					</p>
+					<p class="fragment bulletpoint">
+					~ Get to know DevTools well. – It will keep you above the water and later give you the ability to ride the wave.
+					</p>
+                    <div class="subtext fragment"> 
+					   How many of you know how to right click -> Inspect Element in Chrome Dev Tools?
+					   <br/>How many know how to step-debug?
+					</div>
+				</section>
+				<section>
+					<div class="supertext">II. How To Survive</div>
+					<h2>Ride The Wave!</h2>
+					<img height = "180px" src="./img/surfing.jpg">
+					<p class="fragment bulletpoint">
+						~ As you gain aptitude <br/>– begin to dominate the medium, <br/>rather than let it dominate you.
+					</p>
+					<p class="fragment subtext">
+						~ At the very moment that you master your domain - you begin to thrive!
+					</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>III.</h1>
+					<h2>How To Thrive</h2>
+				</section>
+				<section>
+					<div class="supertext">III. How To Thrive</div>
+						<h3>How many of you have a pet project?</h3>
+					<p class="question fragment">
+						How many of you would classify yourself as a natural tinkerer?
+					</p>
+					<p class="fragment subtext">
+					    After a while, Web Development starts to become second-nature.
+					</p>
+				</section>
+				<section>
+					<div class="supertext">III. How To Thrive</div>
 					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
+					 	<img class="tweet" src="./img/tweets/d.png">
+					 </p>
+					<p class="fragment bulletpoint">
+						~ Engage in Pet Projects-.
+					</p>
+					<p class="fragment bulletpoint">
+						~ Tinker with MockUps, Wireframes, and Prototypes-.
+					</p>
+					<p class="fragment subtext">
+					    You can always Reuse that knowledge, and in the Web - you can always Reuse code.
+					</p>
+				</section>
+				<section>
+					<h3>~ Assemble an online codebase</h3>
+					<p class="fragment bulletpoint">
+						~ Cultivate Pet-Projects into an online repository.
+					</p>					
+					<p class="fragment bulletpoint">
+						~ It is easy to push them to GitHub! <br/>
+						<img src="./img/octocat.jpg">
+					</p>					
+					<p class="fragment bulletpoint">
+						~ Keep them organized with a prefix: “PROJECT_...” 
+					</p>
+					<p class="fragment subtext">
+						~ If you stick to this consistently over time - it is easy to expand your online footprint. 
 					</p>
 				</section>
 
 				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+					<h3>~ Go to the Experts...</h3>
+					<img src="./img/tweets/q.png">
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
+					<p class="fragment bulletpoint">
+						~ Ask, then answer questions on StackOverflow.<br/> Get an account and discover their Careers2.0 page.<br/>
+						<img src="./img/stackoverflow.jpg">
 					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Leave feedback on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>It's free</h2>
-					<p>
-						reveal.js and <a href="http://www.rvl.io">rvl.io</a> are entirely free but if you'd like to support the projects you can donate below.
-						Donations will go towards hosting and domain costs.
+					<p class="fragment bulletpoint">
+						~ Send a Pull Request and contribute on GitHub.<br/>
 					</p>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_donations">
-						<input type="hidden" name="business" value="hakim.elhattab@gmail.com">
-						<input type="hidden" name="lc" value="US">
-						<input type="hidden" name="item_name" value="reveal.js / rvl.io">
-						<input type="hidden" name="no_note" value="0">
-						<input type="hidden" name="currency_code" value="USD">
-						<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					</form>
+
+				</section>
+				<section>
+					<p class=" bulletpoint">
+						~ Attend Hack-a-thons and Meetups on Meetup.com, any others?<br/>
+						<img src="./img/meetup.jpg">
+					</p>
+					<p class="fragment bulletpoint">
+						~ Host, Speak and give Technical Presentations. – Ask for feedback.
+					</p>
+					<aside class="fragment subtext">
+						Social Media is essential in today’s world. So get using it and get out there.
+					</aside>
+				</section>
+				<section>
+					<h3>~Publish to the Web </h3>
+					<p class="question">
+					- For others to see, but also for your own reuse.
+				    </p>
+					<p class="fragment bulletpoint">
+						~ Start a blog. – WordPress, Blogger.  Who has a blog?<br/>
+						<div class="fragment" style="margin-left:320px;">
+							<img class="imageblock" src="./img/wordpress.jpg">
+							<img class="imageblock" src="./img/blogger.jpg">
+						</div>
+						<br/>
+					</p>
+				   <p class="fragment subtext">
+				   	  "Note-Blogging" - is the easy way to get started blogging. Just take notes and then publish them to your blog. Low effort, big return.
+				   </p>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h3>~ Deeply Understand Reuse</h3>
+					- This is so important.
+					<p class="fragment">
+						<img class="tweet" src="./img/tweets/c.png">
+					</p>
+					<div class="subtext fragment">
+						The point is to avoid re-inventing the wheel in favor or reusing and improving existing solutions. 
+					</div>
 				</section>
+				<section>
+					<h3>Can you think of examples of <br/>Reuse in HTML, CSS, and JS?</h3>
+					<p class="">
+						<img src="./img/html5.png"><br/>
+						For a sticker...
+					</p>
+					<aside class=" fragment subtext">
+						HTML: Templates, HTML5 Boilerplate, Copy/Paste...
+						CSS: Mixin, Twitter Bootstrap, Style Guide... <br/>
+						JS: Module, Component, Widget, Package, Class, ... More?
+					</aside>
+				</section>
+				<section>
+					<h3>~ Reuse is an Advanced Skill...</h3>
+					<p class="fragment bulletpoint">
+						Because it allows you to start combining and fitting pieces together.
+					</p>
+					<p class="fragment bulletpoint">
+						~ Once you gain aptitude in assembling pieces - and understand what you are doing - libraries and frameworks become Power Tools.
+					</p>
+					<aside class="fragment subtext">
+						After you know frameworks well, you can assemble advanced architectures effortlessly. This is called Package Managment. But,  like Power Tools, you can also make a mess - so be careful!
+					</aside>
+
+				</section>
+
+
+				<section>
+					<h2>~ Power Workflow</h2>
+					<p class="fragment bulletpoint">
+						~ Reuse, Modify, and Extend code.
+					</p>
+					<p class="fragment bulletpoint">
+						~ This will amplify your code productivity (and quality) over time.<br/>
+						<img src="./img/powertool.png">
+						
+					</p>
+
+				</section>
+
+				<section>
+					<h3>~ Combination is also advanced.</h3>
+					<p class="fragment bulletpoint">
+						~ Roll Code Forward: Look for ways to combine your PROJECT_s.
+					</p>
+					<p class="fragment bulletpoint">
+						Does anyone want to venture a guess as to why combination and iteration is so powerful?
+					</p>
+                    <p class="fragment">
+                    	<img src="./img/sprocketchain.jpg"><br/>
+                    	Because iterative combination is how we innovate.
+                    </p>
+                    <p class="subtext fragment">
+                    	You and I... do this as a profession. And it fundamentally improves the world.
+                    </p>
+
+				</section>
+				<section>
+						<h3>~ As you begin to thrive... </h3>
+						<p class="bulletpoint fragment">strive to understand the Extensibility of code,</p>
+						<p class="bulletpoint fragment">the way it evolves technology,</p>
+						<p class="fragment bulletpoint"> and the power it holds.</br></br>
+							<img src="./img/recycle.png"></p>
+
+				</section>
+				<section>
+					<h2>~ And Iterate</h2>
+					<p class="fragment bulletpoint">
+						~ Recursively loop a learning routine<br/> every single work day.
+					</p>
+					<p class="fragment bulletpoint">
+						~ Just like riding a bike or learning to swim<br/> eventually it becomes second-nature.
+					</p>
+					<p class="fragment bulletpoint">
+						~ And there is no limit to what you can accomplish.
+					</p>
+
+				</section>				
+			</section>
+
+
+            <section>
+				<section>
+					<h2>In Closing...</h2>
+					<p class="fragment bulletpoint">
+						~ Do these things and you will survive each successive wave of technology. 
+					</p>
+					<p class="fragment bulletpoint">
+						~Review these suggestions later in your career, to find yourself doing them naturally.
+					</p>
+					<p class="fragment bulletpoint">
+						~ I hope these ideas free, enlighten, and empower you – to find success and thrive in today’s rapidly advancing Web Technologies.
+					</p>
+					<aside class="subtext fragment">
+						 <a href="http://adaptivepatterns.net/blog/?p=1330">The short list is here in blog form.</a>	
+					</aside>
+
+				</section>
+				<section>
+					<h1>The End!</h1>
+					<p class="bulletpoint">
+						Thank You.
+					</p>
+
+                    <p class="subtext">
+                    	~Clint Nash @adaptivepattern
+                    </p>
+				</section>
+			</section>
+
 
 			</div>
 
